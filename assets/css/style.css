@@ -8,6 +8,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
@@ -18,7 +19,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("/assets/img/laptop.jpg") top right no-repeat; 
+  background: #040404 url('/assets/img/laptop.jpg') no-repeat; 
   background-size: cover;
   left: 0;
   right: 0;
@@ -68,6 +69,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
+  margin-bottom: .5em;
 }
 #header h1 a, #header h1 a:hover {
   color: #fff;
@@ -155,6 +157,10 @@ h1, h2, h3, h4, h5, h6 {
   }
   #header.header-top h1 {
     font-size: 26px;
+  }
+  .img-fluid {
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -667,7 +673,22 @@ section .container {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
+
+h4 {
+  text-decoration: underline;
+}
+.nasa-gif {
+  max-width: 25em;
+  margin-top: 2em;
+}
+.nasa-gif:hover {
+  cursor: pointer;
+}
+.project-description {
+  width: 28em;
+  margin-top: .5em;
+}
+/* .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
 .portfolio #portfolio-flters {
@@ -801,7 +822,7 @@ section .container {
 .portfolio .portfolio-wrap:hover .portfolio-info::after {
   bottom: 15px;
   right: 15px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Portfolio Details
@@ -1031,4 +1052,8 @@ section .container {
 }
 .credits a:hover {
   color: #fff;
+}
+.wrap {
+  
+  color: #e667c0;
 }
